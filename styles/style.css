@@ -9,8 +9,18 @@
   font-size: 45px;
   color: #131313;
 }
+.btn-primary {
+  font-weight: 600;
+  font-size: 20px;
+  background: #ff900e;
+  border-radius: 8px;
+  color: #ffffff;
+  padding: 20px 25px;
+  border: 0;
+  margin-bottom: 50px;
+}
 
-/* header styles */
+/* header styles start*/
 .header {
   background: rgba(255, 144, 14, 0.1);
 }
@@ -37,27 +47,71 @@
   font-size: 18px;
 }
 
-
+/* brand styles */
+.brand-container {
+  text-align: center;
+  width: 862px;
+  margin: 0 auto;
+}
+.brand-title {
+  font-weight: 700;
+  font-size: 64px;
+  color: #131313;
+}
+.brand-description {
+  color: #727272;
+  margin: 32px 0;
+}
+/* banner styles */
+.banner-container{
+  padding: 0 240px;
+}
+.banner{
+  width: 100%;
+  margin-bottom: 45px;
+  border-radius: 8px;
+}
+/* header styles end */
 /* responsive styles */
-@media screen and (max-width:576px) {
+@media screen and (max-width: 576px) {
   /* nav styles */
-  .nav{
+  .nav {
     flex-direction: column;
     padding: 50px 0;
   }
-  .nav-btns ul{
+  .nav-btns ul {
     flex-direction: column;
     gap: 25px;
     margin-top: 25px;
   }
+  /* brand styles */
+  .brand-container{
+    width: 90%;
+  }
+  /* banner styles */
+  .banner-container{
+    padding: 0;
+    width: 90%;
+    margin: 0 auto;
+  }
 }
 
-@media screen and (min-width:577px) and (max-width:992px) {
+@media screen and (min-width: 577px) and (max-width: 992px) {
   /* nav styles */
-  .nav{
+  .nav {
     padding: 50px;
   }
-  .nav-btns ul{
+  .nav-btns ul {
     gap: 25px;
+  }
+  /* brand styles */
+  .brand-container{
+    width: 90%;
+  }
+  /* banner styles */
+  .banner-container{
+    padding: 0;
+    width: 90%;
+    margin: 0 auto;
   }
 }
