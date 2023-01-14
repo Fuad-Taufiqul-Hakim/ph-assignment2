@@ -23,6 +23,9 @@
   border: 0;
   margin-bottom: 50px;
 }
+.border-left {
+  border-left: 2px solid #ff900e;
+}
 
 /* header styles start*/
 .header {
@@ -80,7 +83,6 @@
 /* main styles start */
 .main {
   margin: 0 auto;
-  padding: 85px 301px;
 }
 /* feature section styles */
 .feature {
@@ -88,6 +90,7 @@
   justify-content: center;
   align-items: center;
   gap: 73px;
+  padding: 85px 301px;
 }
 .gallery {
   width: 50%;
@@ -112,7 +115,53 @@
 .section-title .orange {
   color: #ff900e;
 }
-
+/* descriptive feature styles */
+.des-section {
+  padding: 130px 240px;
+}
+.des-feature {
+  display: flex;
+  justify-content: space-between;
+  gap: 146px;
+}
+.des-feature-container {
+  width: 50%;
+}
+.des-feature-container .section-title {
+  padding-left: 21px;
+}
+.feature-card {
+  background: #ffffff;
+  box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.06);
+  border-radius: 8px;
+  padding: 30px;
+  margin-bottom: 20px;
+}
+.card-title {
+  font-weight: 600;
+  font-size: 20px;
+  color: #131313;
+  margin-bottom: 10px;
+}
+.card-description {
+  color: #727272;
+}
+.des-feature-container img {
+  width: 100%;
+  border-radius: 8px;
+}
+.btn-experience {
+  text-align: center;
+}
+.btn-position {
+  position: relative;
+  left: 110px;
+  bottom: 490px;
+}
+.btn-position span {
+  font-weight: 700;
+  font-size: 65px;
+}
 /* responsive styles */
 @media screen and (max-width: 576px) {
   /* nav styles */
@@ -135,23 +184,36 @@
     width: 90%;
     margin: 0 auto;
   }
-  /* main styles start */
-  .main {
-    padding: 50px;
-  }
+
   /* feature section styles */
   .feature {
     flex-direction: column;
+    padding: 50px;
   }
-  .gallery{
+  .gallery {
     width: 100%;
   }
-  .gallery img{
+  .gallery img {
     border-radius: 8px;
   }
   .feature-info {
     width: 100%;
     text-align: center;
+  }
+  /* descriptive feature styles */
+  .des-section {
+    padding: 50px;
+  }
+  .des-feature{
+    flex-direction: column;
+    gap: 54px;
+  }
+  .des-feature-container{
+    width: 100%;
+  }
+  .btn-position{
+    position: static;
+    margin-top: 24px;
   }
 }
 
@@ -173,19 +235,31 @@
     width: 90%;
     margin: 0 auto;
   }
-  /* main styles start */
-  .main {
-    padding: 80px;
-  }
   /* feature section styles */
   .feature {
     flex-direction: column;
+    padding: 80px;
   }
-  .gallery{
+  .gallery {
     width: 100%;
   }
   .feature-info {
     width: 100%;
     text-align: center;
+  }
+  /* descriptive feature styles */
+  .des-section {
+    padding: 80px;
+  }
+  .des-feature{
+    flex-direction: column;
+    gap: 54px;
+  }
+  .des-feature-container{
+    width: 100%;
+  }
+  .btn-position{
+    position: static;
+    margin-top: 24px;
   }
 }
