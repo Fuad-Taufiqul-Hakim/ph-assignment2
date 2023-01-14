@@ -9,6 +9,10 @@
   font-size: 45px;
   color: #131313;
 }
+.section-description {
+  margin: 24px 0 32px 0;
+  color: #727272;
+}
 .btn-primary {
   font-weight: 600;
   font-size: 20px;
@@ -63,15 +67,52 @@
   margin: 32px 0;
 }
 /* banner styles */
-.banner-container{
+.banner-container {
   padding: 0 240px;
 }
-.banner{
+.banner {
   width: 100%;
   margin-bottom: 45px;
   border-radius: 8px;
 }
 /* header styles end */
+
+/* main styles start */
+.main {
+  margin: 0 auto;
+  padding: 85px 301px;
+}
+/* feature section styles */
+.feature {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 73px;
+}
+.gallery {
+  width: 50%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
+}
+.gallery img {
+  width: 100%;
+}
+.feature-info {
+  width: 50%;
+}
+.section-title .fade {
+  font-weight: 500;
+  font-size: 45px;
+  color: #727272;
+}
+.section-title .dark {
+  color: #131313;
+}
+.section-title .orange {
+  color: #ff900e;
+}
+
 /* responsive styles */
 @media screen and (max-width: 576px) {
   /* nav styles */
@@ -85,14 +126,32 @@
     margin-top: 25px;
   }
   /* brand styles */
-  .brand-container{
+  .brand-container {
     width: 90%;
   }
   /* banner styles */
-  .banner-container{
+  .banner-container {
     padding: 0;
     width: 90%;
     margin: 0 auto;
+  }
+  /* main styles start */
+  .main {
+    padding: 50px;
+  }
+  /* feature section styles */
+  .feature {
+    flex-direction: column;
+  }
+  .gallery{
+    width: 100%;
+  }
+  .gallery img{
+    border-radius: 8px;
+  }
+  .feature-info {
+    width: 100%;
+    text-align: center;
   }
 }
 
@@ -105,13 +164,28 @@
     gap: 25px;
   }
   /* brand styles */
-  .brand-container{
+  .brand-container {
     width: 90%;
   }
   /* banner styles */
-  .banner-container{
+  .banner-container {
     padding: 0;
     width: 90%;
     margin: 0 auto;
+  }
+  /* main styles start */
+  .main {
+    padding: 80px;
+  }
+  /* feature section styles */
+  .feature {
+    flex-direction: column;
+  }
+  .gallery{
+    width: 100%;
+  }
+  .feature-info {
+    width: 100%;
+    text-align: center;
   }
 }
