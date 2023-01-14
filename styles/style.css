@@ -1,6 +1,63 @@
 /* common styles */
-*{
+* {
   margin: 0;
   padding: 0;
-  background-color: aquamarine;
+  font-family: "Work Sans", sans-serif;
+}
+.section-title {
+  font-weight: 700;
+  font-size: 45px;
+  color: #131313;
+}
+
+/* header styles */
+.header {
+  background: rgba(255, 144, 14, 0.1);
+}
+/* Nav styles */
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 50px 240px 102px 228px;
+}
+.nav-btns ul {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 50px;
+}
+.nav-btns ul li {
+  list-style: none;
+}
+.nav-btns ul li a {
+  text-decoration: none;
+  color: #424242;
+  font-weight: 500;
+  font-size: 18px;
+}
+
+
+/* responsive styles */
+@media screen and (max-width:576px) {
+  /* nav styles */
+  .nav{
+    flex-direction: column;
+    padding: 50px 0;
+  }
+  .nav-btns ul{
+    flex-direction: column;
+    gap: 25px;
+    margin-top: 25px;
+  }
+}
+
+@media screen and (min-width:577px) and (max-width:992px) {
+  /* nav styles */
+  .nav{
+    padding: 50px;
+  }
+  .nav-btns ul{
+    gap: 25px;
+  }
 }
