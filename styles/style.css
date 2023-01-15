@@ -193,7 +193,22 @@
   color: #727272;
 }
 
-
+/* sponsor styles */
+.sponsor-section {
+  padding: 0px 240px 130px 240px;
+}
+.sponsor-container {
+  text-align: center;
+}
+.sponsor-names {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 50px;
+}
+.sponsor-names img {
+  filter: grayscale(100%);
+}
 /* hover styles */
 .fact-card:hover {
   transform: scale(1.1);
@@ -256,10 +271,18 @@
   .facts-section {
     padding: 50px;
   }
-  .fact-cards{
+  .fact-cards {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+  }
+  /* sponsor styles */
+  .sponsor-section {
+    padding: 50px;
+  }
+  .sponsor-names{
+    flex-direction: column;
+    gap: 24px;
   }
 }
 
@@ -314,8 +337,17 @@
   .facts-section {
     padding: 50px;
   }
-  .fact-cards{
+  .fact-cards {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+  }
+  /* sponsor styles */
+  .sponsor-section {
+    padding: 80px;
+  }
+  .sponsor-names{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
   }
 }
