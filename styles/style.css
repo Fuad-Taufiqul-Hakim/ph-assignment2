@@ -117,7 +117,7 @@
 }
 /* descriptive feature styles */
 .des-section {
-  padding: 130px 240px;
+  padding: 130px 240px 0px 240px;
 }
 .des-feature {
   display: flex;
@@ -146,9 +146,12 @@
 .card-description {
   color: #727272;
 }
+
 .des-feature-container img {
   width: 100%;
+  height: 90%;
   border-radius: 8px;
+  object-fit: cover;
 }
 .btn-experience {
   text-align: center;
@@ -156,7 +159,7 @@
 .btn-position {
   position: relative;
   left: 110px;
-  bottom: 490px;
+  bottom: 210px;
 }
 .btn-position span {
   font-weight: 700;
@@ -164,7 +167,7 @@
 }
 /* facts styles */
 .facts-section {
-  padding: 0 240px 130px 240px;
+  padding: 0px 240px 130px 240px;
 }
 .fact-cards {
   display: flex;
@@ -213,7 +216,7 @@
 .contact-section {
   margin: 0px 240px 130px 240px;
 }
-.contact-description{
+.contact-description {
   text-align: center;
 }
 .contact-form {
@@ -281,6 +284,8 @@ textarea {
     padding: 50px;
   }
   .gallery {
+    display: flex;
+    flex-direction: column;
     width: 100%;
   }
   .gallery img {
@@ -321,6 +326,14 @@ textarea {
   .sponsor-names {
     flex-direction: column;
     gap: 24px;
+  }
+  /* contact styles */
+  .contact-section {
+    margin: 50px;
+  }
+  input,
+  textarea {
+  width: 80%;
   }
   /* footer styles */
   .footer {
@@ -391,6 +404,10 @@ textarea {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 25px;
+  }
+  /* contact styles */
+  .contact-section {
+    margin: 80px;
   }
   /* footer styles */
   .footer {
